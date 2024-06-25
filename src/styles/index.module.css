@@ -1,0 +1,35 @@
+.twenty48 {
+    margin: calc(var(--pixel-size) * 0) auto;
+    padding: calc(var(--pixel-size) * 1);
+    width: 100%;
+    max-width: calc(var(--pixel-size) * 37);
+}
+
+@media (min-width: 512px) {
+    .twenty48 {
+        max-width: calc(var(--pixel-size) * 60);
+    }
+}
+
+.twenty48 > header {
+    display: flex;
+    align-items: center;
+    margin: calc(var(--pixel-size) * 1) calc(var(--pixel-size) * 0);
+}
+
+.twenty48 > header > * {
+    flex: 1;
+}
+
+@media (min-width: 512px) {
+    .twenty48 > footer {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        text-align: left;
+    }
+
+    .twenty48 > div {
+        width: 100%;
+    }
+}
